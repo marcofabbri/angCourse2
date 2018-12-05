@@ -1,0 +1,18 @@
+{
+    "/github": {
+        "target": "https://api.github.com/repos/",
+        "secure": true,
+        "changeOrigin": true,
+        "pathRewrite": {
+            "^/github": ""
+        }
+    },
+    "/reqres": {
+        "target": "https://reqres.in/",
+        "secure": true,
+        "changeOrigin": true,
+        "pathRewrite": {
+            "^/reqres": ""
+        }
+    }
+}
