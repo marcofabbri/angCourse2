@@ -23,3 +23,26 @@
 <div *ngFor="let commit of commits">
   {{commit.sha}} --- {{commit.commit.message}}
 </div>
+<button id="btn" (click)="click()">Click</button>
+<button id="btn" (click)="click2()">Click2</button>
+<button id="btn" (click)="click3()">Click3</button>
+
+
+<hr>
+<button type="button" (click)="start()">Parti</button>
+<button type="button" (click)="stop()">Fermati</button>
+
+<div>
+  <button type="button" (click)="startNumberGenerator()">Numeri casuali</button>
+</div>
+
+<div>
+  <button type="button" (click)="fakeHttp()">Fake HTTP</button>
+  <div>{{output}}</div>
+</div>
+
+<div>
+  <button type="button" (click)="makeSubjects()">Subjects</button>
+</div>
+
+<div>{{now | async}}</div>
